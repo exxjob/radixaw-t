@@ -75,7 +75,7 @@ function radicesConvert(input::Array{Char}, inRadix::Array{Char}, outRadix::Arra
 
     out::Array{Char}=[]
     for i in reverse(1:length(outArray))
-        push!(out,outRadix[outArray[i]])
+        push!(out,outRadix[outArray[i]+1])
     end
     return out
 end
